@@ -1,0 +1,130 @@
+<?php
+
+$db_host ="localhost";
+$db_user ="root";
+$db_password ="Yathu1999614#";
+$db_name="demo";
+$db_connect =mysql_connect($db_host,$db_user,$db_password,db_name) or die ();
+// check connection
+if (mysqli_connect_error())
+{
+	echo 'failed to connect to MySQL:'mysqli_connect_error();
+	
+}
+ echo 'connection success';
+ 
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title> The Online Advertising Agency </title>
+	<link  rel="stylesheet" type="text/css"  href="css/iwt.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+	
+	<script defer src="script.js"></script>
+
+</head>
+
+<body>
+	<img class="logo" src ="images/image.png" alt=" Image " width ="400" height="200" >
+	<center>
+	<div class = "container">
+	<h1>CONTACT US<font color ="black"> </h1>
+	<p>We would love to respond to your queries and help you succeed...<br>feel free to get in touch with us.</p>
+	
+<hr id = "test"/>
+</center>
+
+<ul class ="menu">
+    <li class ="menu"><a href ="https://courseweb.sliit.lk/">  Home </a> </li>
+	<li class ="menu"><a href ="https://courseweb.sliit.lk/">Design</a></li>
+	<li class ="menu"><a href ="https://courseweb.sliit.lk/"> Contact us</a> </li> 
+	<li class ="menu"><a href ="https://courseweb.sliit.lk/"> About us </a></li>
+    <li class ="menu"><a href ="https://courseweb.sliit.lk/"> Solution </a></li>
+</ul>
+
+<br/><br/>
+<center>
+<div class="contact-box">
+<div class ="contact-left">
+<h3>sent your request</h3>
+</br>
+<div id="error"></div>
+<form id ="form" method="POST" action="#">
+<div class ="input-row " >
+<div class ="input-group">
+<label>Name</label>
+
+ <input type ="text" placeholder="shaan" required>
+ </div>
+ 
+  <div class ="input-group">
+<label>Phone</label>
+ <input type ="text" placeholder="+94775565345" required>
+</div>
+
+</div>
+<div class ="input-row" >
+ <div class ="input-group">  
+<label>Email</label>
+ <input type ="text" placeholder="shaan005@gmail.com" required>
+</div>
+ <div class ="input-group">
+<label>subject</label>
+ <input type ="text" placeholder="*****" required>
+</div>
+ </div>
+</br>
+
+<label>message</label> 
+
+<textarea rows="3" placeholder="Your message"></textarea>
+
+
+</br></br>
+<button>Submit</button>
+<img class="body" src ="images/body.png" alt=" Image " width ="200" height="100" >
+</form>
+</div>
+
+<div class ="contact-right">
+<h3> reach us</h3>
+<table>
+<tr>
+<td>Email</td>
+<td>advisight@gmail.com</td>
+</tr>
+
+<tr>
+<td>Phone</td>
+<td>+94761252542 <br>(customer care)</td>
+</tr>
+
+<tr>
+<td>Address</td>
+<td>no:25,ground floor,<br> grandpass road ,colombo.</td>
+</tr>
+<tr>
+<td>Face Book Page</td>
+<td>ADVISIGHT.LANKA </td>
+</tr>
+<tr>
+<td>Instagram Page</td>
+<td>online advertising lanka</td>
+
+</tr>
+<img class="body" src ="images/body.png" alt=" Image " width ="200" height="100" >
+</table>
+</div>
+</div>
+</div>
+</br></br>
+
+</br>
+<h4 style="font-weight:bold"><i> You can also reach us  :<font color ="black">  <u>info@onlineagency.org </font></u> </i> </h4>
+</center>
+</body>
+</html>
